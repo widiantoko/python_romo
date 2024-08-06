@@ -53,7 +53,7 @@ while i < len(x_gab):
 
 
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
-fig_test.update_traces(hovertextsrc=storage['Nm_Brg'], selector=dict(type='isosurface'))
+fig_test.update_traces(hovertext=storage['Nm_Brg'], selector=dict(type='isosurface'))
 
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))

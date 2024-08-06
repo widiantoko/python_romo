@@ -30,7 +30,7 @@ x_gab=storage[['x1','x2','x3','x4','x5','x6','x7','x8']].values.tolist()
 y_gab=storage[['y1','y2','y3','y4','y5','y6','y7','y8']].values.tolist()
 z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 #v_gab=storage[['v1','v2','v3','v4','v5','v6','v7','v8']].values.tolist()
-v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].values.tolist()
+v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].to_string()
 
 h_gab=storage[['No_Batch']].values.tolist()
 hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg' ]].values.tolist()

@@ -62,7 +62,7 @@ fig_test.update_layout(
     hoverlabel=dict(
         bgcolor="white",
         font_size=12,
-        font_family="Rockwell"),)
+        font_family="Calibri"),)
 
 
 

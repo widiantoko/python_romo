@@ -53,9 +53,9 @@ while i < len(x_gab):
 
 #fig_test.add_surface(colorscale='algae', colorbar_thickness=25, colorbar_len=1.5)
 
-fig_test.update_traces(hovertemplate=None,  selector=dict(type='isosurface'))
-fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
-fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
+fig_test.update_traces(hovertemplate=None,  text="ada_aza", selector=dict(type='isosurface'))
+#fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
+#fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
 
 

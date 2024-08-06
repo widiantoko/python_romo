@@ -10,7 +10,7 @@ st.set_page_config(
 
 storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',')
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
-
+storage["No_Batch"] = storage["No_Batch"].apply(str)
 
 #st.dataframe(storage)
 

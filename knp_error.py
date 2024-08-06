@@ -46,7 +46,7 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
-        hovertemplate="<i>Produk</i>: %{hovertext}" "<br><b>Batch</b>: %{value:d3-format} <extra></extra>"
+        hovertemplate="<b>Produk:</b> %{hovertext}" "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
 
 
         

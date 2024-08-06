@@ -56,7 +56,7 @@ fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
 
-fig_test.update_layout(hovermode="x")
+fig_test.update_layout(hovermode="text")
 
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
 

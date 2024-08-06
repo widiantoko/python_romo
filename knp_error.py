@@ -14,8 +14,8 @@ storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+sto
 
 #st.dataframe(storage)
 
-st.text(list(storage.columns))
-st.text(storage.dtypes)
+#st.text(list(storage.columns))
+#st.text(storage.dtypes)
 #print(storage['Nm_Brg'].drop_duplicates())
 
 #pilih=storage[storage['Nm_Brg']=='Dragon']

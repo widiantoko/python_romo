@@ -47,13 +47,16 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
-        visible=True
+        hoverinfo="text",
+        hovertemplate="Batch: %{value}, Produk: %{hovertext}"
+
+
         
        ))
     i += 1  # Update kondisi iterasi
 
-fig_test.update_traces(hoverinfo="text", selector=dict(type='isosurface'))
-fig_test.update_traces(hovertemplate="Batch: %{value}, Produk: %{hovertext}" , selector=dict(type='isosurface'))
+#fig_test.update_traces(hoverinfo="text", selector=dict(type='isosurface'))
+#fig_test.update_traces(hovertemplate="Batch: %{value}, Produk: %{hovertext}" , selector=dict(type='isosurface'))
 #fig_test.update_traces(visible=False, selector=dict(type='isosurface'))
 
 fig_test.update_layout(

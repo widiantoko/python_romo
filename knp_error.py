@@ -15,6 +15,7 @@ storage["No_Batch"] = storage["No_Batch"].astype(str)
 #st.dataframe(storage)
 
 st.text(list(storage.columns))
+st.text(storage.dtypes)
 #print(storage['Nm_Brg'].drop_duplicates())
 
 #pilih=storage[storage['Nm_Brg']=='Dragon']

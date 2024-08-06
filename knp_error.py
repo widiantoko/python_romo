@@ -45,6 +45,7 @@ while i < len(x_gab):
         z=z_gab[i],
         value=v_gab[i],
         showscale=False,
+        hoverinfo=None,
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
@@ -58,7 +59,7 @@ while i < len(x_gab):
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
-fig_test.update_traces(hoverinfo=None, selector=dict(type='isosurface'))
+#fig_test.update_traces(hoverinfo=None, selector=dict(type='isosurface'))
 
 fig_test.update_layout(
     hoverlabel=dict(

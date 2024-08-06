@@ -49,7 +49,7 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
-        visible=False
+        visible=True
         
        ))
     i += 1  # Update kondisi iterasi

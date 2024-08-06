@@ -60,7 +60,7 @@ while i < len(x_gab):
 
 fig_test.update_layout(
     hoverlabel=dict(
-        bgcolor="grey",
+        bgcolor="white",
         font_size=12,
         font_family="Arial"),)
 

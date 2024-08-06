@@ -48,6 +48,7 @@ while i < len(x_gab):
         showscale=False,
         opacity=1,
         colorscale=pick_color[i],
+        hoverlabel=None,
         hovertext=hvr_txt[i]
         
        ))

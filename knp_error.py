@@ -49,12 +49,13 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
+        visible=False
         
        ))
     i += 1  # Update kondisi iterasi
 
 
-fig_test.update_traces(visible=False, selector=dict(type='isosurface'))
+#fig_test.update_traces(visible=False, selector=dict(type='isosurface'))
 
 fig_test.update_layout(
     hoverlabel=dict(

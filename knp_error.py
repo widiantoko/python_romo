@@ -59,7 +59,7 @@ fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 fig_test.update_layout(
     hoverlabel=dict(
         bgcolor="white",
-        font_size=16,
+        font_size=12,
         font_family="Rockwell")
 )
 

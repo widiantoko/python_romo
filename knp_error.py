@@ -46,6 +46,7 @@ while i < len(x_gab):
         showscale=False,
         opacity=1,
         colorscale=pick_color[i],
+        hovertext=storage['Nm_Brg']
         
     ))
     i += 1  # Update kondisi iterasi

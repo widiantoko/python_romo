@@ -53,13 +53,8 @@ while i < len(x_gab):
        ))
     i += 1  # Update kondisi iterasi
 
-#fig_test.update_traces(mode=None,selector=dict(type='isosurface'))
-#fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
-#fig_test.update_traces(hovertext=storage['Nm_Brg'], selector=dict(type='isosurface'))
-#fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
-#fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
-#fig_test.update_traces(hoverinfo=None, selector=dict(type='isosurface'))
+fig_test.update_traces(visible=False, selector=dict(type='isosurface'))
 
 fig_test.update_layout(
     hoverlabel=dict(

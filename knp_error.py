@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered",)
 
 
-storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',')
+storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal='.')
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
 #storage["No_Batch"] = storage["No_Batch"].astype(str)
 

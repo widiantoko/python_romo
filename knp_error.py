@@ -48,7 +48,6 @@ while i < len(x_gab):
         showscale=False,
         opacity=1,
         colorscale=pick_color[i],
-        hoverlabel=False,
         hovertext=hvr_txt[i]
         
        ))
@@ -66,7 +65,8 @@ fig_test.update_layout(
     hoverlabel=dict(
         bgcolor="white",
         font_size=12,
-        font_family="Rockwell")
+        font_family="Rockwell"),
+    
 )
 
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)

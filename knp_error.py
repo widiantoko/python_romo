@@ -37,7 +37,6 @@ pick_color = storage['color'].tolist()
 
 
 fig_test = go.Figure()
-
 i = 0
 while i < len(x_gab):
     fig_test.add_trace(go.Isosurface(
@@ -59,6 +58,7 @@ while i < len(x_gab):
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
+fig_test.update_traces(hoverinfo=None, selector=dict(type='isosurface'))
 
 fig_test.update_layout(
     hoverlabel=dict(

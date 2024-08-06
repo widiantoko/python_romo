@@ -56,7 +56,6 @@ while i < len(x_gab):
 #fig_test.update_traces(mode=None,selector=dict(type='isosurface'))
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext=storage['Nm_Brg'], selector=dict(type='isosurface'))
-
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))
 
@@ -68,6 +67,9 @@ fig_test.update_layout(
         font_family="Rockwell"),
     
 )
+
+
+
 
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
 

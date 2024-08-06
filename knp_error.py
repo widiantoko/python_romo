@@ -7,10 +7,10 @@ st.set_page_config(
     page_title="Storage_Warehouse",
     layout="centered",)
 
-
-storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',')
+#drinks = pd.read_csv(url, dtype={'beer_servings':float})
+storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'No_Batch':str}) 
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
-storage["No_Batch"] = storage["No_Batch"].astype(str)
+#storage["No_Batch"] = storage["No_Batch"].astype(str)
 
 #st.dataframe(storage)
 

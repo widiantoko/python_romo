@@ -32,7 +32,6 @@ y_gab=storage[['y1','y2','y3','y4','y5','y6','y7','y8']].values.tolist()
 z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 v_gab=storage[['v1','v2','v3','v4','v5','v6','v7','v8']].values.tolist()
 hvr_txt=storage[['Nm_Brg']].values.tolist()
-
 pick_color = storage['color'].tolist()    
 
 
@@ -46,7 +45,7 @@ while i < len(x_gab):
         z=z_gab[i],
         value=v_gab[i],
         showscale=False,
-        opacity=1,
+        opacity=0,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i]
        

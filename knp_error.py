@@ -46,14 +46,14 @@ while i < len(x_gab):
         showscale=False,
         opacity=1,
         colorscale=pick_color[i],
-        hovertextsrc=storage['Nm_Brg'][i]
+       
         
     ))
     i += 1  # Update kondisi iterasi
 
 
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
-fig_test.update_traces(hovertext=storage['Nm_Brg'], selector=dict(type='isosurface'))
+fig_test.update_traces(hovertextsrc=storage['Nm_Brg'], selector=dict(type='isosurface'))
 
 #fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertext="apa", selector=dict(type='isosurface'))

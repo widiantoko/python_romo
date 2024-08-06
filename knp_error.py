@@ -24,8 +24,6 @@ print(storage['Nm_Brg'].drop_duplicates())
 storage['color'] = storage['Nm_Brg'].apply(lambda x: 'balance' if x == 'Dragon' else 'Plasma')
 
 
-
-
 #for a in storage['position']:
 x_gab=storage[['x1','x2','x3','x4','x5','x6','x7','x8']].values.tolist()
 y_gab=storage[['y1','y2','y3','y4','y5','y6','y7','y8']].values.tolist()
@@ -48,7 +46,8 @@ while i < len(x_gab):
         showscale=False,
         opacity=1,
         colorscale=pick_color[i],
-        hovertext=hvr_txt[i]
+        hovertext=hvr_txt[i],
+        hoverinfo=h_gab[i]
         
        ))
     i += 1  # Update kondisi iterasi
@@ -72,7 +71,6 @@ fig_test.update_layout(
 
 
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
-
 fig_test.update_layout(scene = dict(xaxis = dict(title='Blok XYZ',tickangle=0, labelalias= {0:'', 
                                                                                              0.5: 'XYZ.01', 
                                                                                              1:'', 

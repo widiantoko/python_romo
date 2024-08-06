@@ -46,12 +46,16 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
-        hovertemplate="Produk: %{hovertext}, \nBatch: %{value:d3-format} <extra></extra>"
+        hovertemplate="<i>Produk</i>: %{hovertext}" "<br><b>Batch</b>: %{value:d3-format} <extra></extra>"
 
 
         
        ))
     i += 1  # Update kondisi iterasi
+
+ #'<i>Price</i>: $%{y:.2f}'+
+ #   '<br><b>X</b>: %{x}<br>'+
+
 
 #fig_test.update_traces(visible='legendonly', selector=dict(type='isosurface'))
 #fig_test.update_traces(hoverinfo="text", selector=dict(type='isosurface'))

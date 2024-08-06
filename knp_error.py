@@ -53,6 +53,10 @@ while i < len(x_gab):
 
 #fig_test.add_surface(colorscale='algae', colorbar_thickness=25, colorbar_len=1.5)
 
+fig_test.update_traces(text="ada_aza", selector=dict(type='isosurface'))
+
+
+
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
 
 fig_test.update_layout(scene = dict(xaxis = dict(title='Blok XYZ',tickangle=0, labelalias= {0:'', 

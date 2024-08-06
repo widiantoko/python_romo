@@ -32,7 +32,7 @@ z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].values.tolist()
 
 h_gab=storage[['No_Batch']].values.tolist()
-hvr_txt=storage[['Nm_Brg']].values.tolist()
+hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg' ]].values.tolist()
 pick_color = storage['color'].tolist()    
 
 
@@ -54,7 +54,7 @@ while i < len(x_gab):
     i += 1  # Update kondisi iterasi
 
 fig_test.update_traces(hoverinfo="text", selector=dict(type='isosurface'))
-fig_test.update_traces(hovertemplate="Batch= %{value}, Produk= %{hvr_txt}" , selector=dict(type='isosurface'))
+fig_test.update_traces(hovertemplate="Batch= %{value}, Produk= %{hover_txt}" , selector=dict(type='isosurface'))
 #fig_test.update_traces(visible=False, selector=dict(type='isosurface'))
 
 fig_test.update_layout(

@@ -55,6 +55,7 @@ while i < len(x_gab):
        ))
     i += 1  # Update kondisi iterasi
 
+fig_test.update_traces(visible='legendonly', selector=dict(type='isosurface'))
 #fig_test.update_traces(hoverinfo="text", selector=dict(type='isosurface'))
 #fig_test.update_traces(hovertemplate="Batch: %{value}, Produk: %{hovertext}" , selector=dict(type='isosurface'))
 #fig_test.update_traces(visible=False, selector=dict(type='isosurface'))

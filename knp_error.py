@@ -10,6 +10,7 @@ st.set_page_config(
 #drinks = pd.read_csv(url, dtype={'beer_servings':float})
 storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',') 
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
+storage['posisi']=storage["Zona"].astype(str)+"."+storage["Aisle"].astype(str)
 
 
 #st.dataframe(storage)
@@ -32,7 +33,7 @@ z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].values.tolist()
 hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg' ]].values.tolist()
 pick_color = storage['color'].tolist()
-lokasi = storage[['Zona','Zona','Zona','Zona','Zona','Zona','Zona','Zona']].values.tolist()
+lokasi = storage[['posisi','posisi','posisi','posisi','posisi','posisi','posisi','posisi']].values.tolist()
 
 
 

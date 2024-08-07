@@ -118,7 +118,6 @@ fig_test.update_layout(
 
 
 
-
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
 fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AB',tickangle=0, labelalias= {0:'', 
                                                                                              0.5: 'AB.01', 

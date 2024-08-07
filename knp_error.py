@@ -12,13 +12,13 @@ storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',')
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
 
 for i, row in storage.iterrows():
-        hasil2 = ''
-        if len(row["Aisle"]) <= 1:
-            hasil2 = "0"+row["Aisle"]
-        else:
-             hasil2 = row["Aisle"]
+    hasil2 = ''
+    if len(row["Aisle"]) <= 1:
+        hasil2 = "0"+row["Aisle"]
+    else:
+        hasil2 = row["Aisle"]
         
-        storage.at[i, "Aisle"] = hasil2
+    storage.at[i, "Aisle"] = hasil2
 
 
 

@@ -75,7 +75,7 @@ fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AB',tickangle=0, la
 
 
 st.subheader('VISUALISASI PENYIMPANAN DI GUDANG - AAA')
-#st.plotly_chart(fig_test)
+st.plotly_chart(fig_test)
 
 
 
@@ -141,4 +141,4 @@ fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=0
 
 
 #st.subheader('VISUALISASI PENYIMPANAN DI GUDANG - AAA')
-st.plotly_chart(fig_test_new)
+#st.plotly_chart(fig_test_new)

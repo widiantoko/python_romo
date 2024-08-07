@@ -39,8 +39,8 @@ while i < len(x_gab_new):
         colorscale=pick_color_new[i],
         text=lokasi_new[i],
         hovertext=hvr_txt_new[i],
-        isomin= -1, 
-        isomax =   1,
+        isomin= 1, 
+        isomax =   2,
         hovertemplate=
             "<b>Lokasi:</b> %{text}"
             "<br><b>Produk:</b> %{hovertext}" 

@@ -13,12 +13,12 @@ storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+sto
 
 for i, row in storage.iterrows():
         hasil2 = ''
-        if len(row['Aisle']) == 1:
+        if len(row["Aisle"]) == 1:
             hasil2 = "0"+row["Aisle"]
         else:
              hasil2 = row["Aisle"]
         
-        storage.at[i, 'Aisle'] = hasil2
+        storage.at[i, "Aisle"] = hasil2
 
 
 

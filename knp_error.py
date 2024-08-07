@@ -57,15 +57,11 @@ fig_test_new.update_layout(
         font_family="Arial"),)
 
 
-
-
 fig_test_new.update_layout(autosize=True, width=2000,height=600, margin=dict(t=0, r=0, l=0, b=0,),)
 
 fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=0, showticklabels=False),
                     yaxis = dict(title='Depth', showticklabels=False),
                     zaxis = dict(title='Level', showticklabels=False), ))
-
-
 
 
 st.plotly_chart(fig_test_new)

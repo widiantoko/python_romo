@@ -42,7 +42,7 @@ while i < len(x_gab_new):
         hovertemplate=
             "<b>Lokasi:</b> %{text}"
             "<br><b>Produk:</b> %{hovertext}" 
-            "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
+            "<br><b>Batch:</b> %{value:d3-format} <extra></extra>",
         x_show=False, y_show=False
 
 

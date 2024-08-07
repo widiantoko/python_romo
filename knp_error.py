@@ -9,10 +9,6 @@ st.set_page_config(
 
 
 storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
-#storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
-
-
-
 storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
 
 

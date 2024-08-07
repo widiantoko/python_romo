@@ -8,7 +8,7 @@ st.set_page_config(
     layout="centered",)
 
 
-storage=pd.read_csv('uji_cobacsv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
+storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
 
 

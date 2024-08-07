@@ -35,7 +35,7 @@ hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg',
 pick_color = storage['color'].tolist()
 lokasi = storage[['posisi','posisi','posisi','posisi','posisi','posisi','posisi','posisi']].values.tolist()
 
-st.text(lokasi)
+st.text(storage['posisi'])
 
 fig_test = go.Figure()
 i = 0

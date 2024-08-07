@@ -124,7 +124,7 @@ fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=0, sh
                     zaxis = dict(title='Level', showticklabels=False), ))
 
 fig_test.update_layout(scene_aspectmode='data')
-st.subheader('VISUALISASI PENYIMPANAN DI GUDANG - AAA')
+st.subheader('VISUALISASI PENYIMPANAN BLOK AA.01 - AA.08')
 st.plotly_chart(fig_test)
 
 

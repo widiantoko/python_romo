@@ -28,7 +28,7 @@ lokasi_new = storage_new[['posisi','posisi','posisi','posisi','posisi','posisi',
 
 fig_test_new = go.Figure()
 i = 0
-while i < len(x_gab):
+while i < len(x_gab_new):
     fig_test_new.add_trace(go.Isosurface(
         x=x_gab_new[i],
         y=y_gab_new[i],

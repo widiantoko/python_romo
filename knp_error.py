@@ -80,11 +80,11 @@ fig_test.update_layout(
 
 fig_test.update_layout(autosize=True,width=2000,height=600, margin=dict(t=0, l=0, b=0,),)
 fig_test.update_layout(scene = dict(xaxis = dict(title='Blok XYZ',tickangle=0, labelalias= {0:'', 
-                                                                                             0.5: 'XYZ.01', 
+                                                                                             0.5: 'AB.01', 
                                                                                              1:'', 
-                                                                                             1.5:'XYZ.02', 
+                                                                                             1.5:'AB.02', 
                                                                                              2:'',
-                                                                                             2.5:'XYZ.03',
+                                                                                             2.5:'AB.03',
                                                                                              3:''
                                                                                              }),
                     yaxis = dict(title='Depth', showticklabels=False),

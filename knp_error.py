@@ -128,7 +128,7 @@ camera = dict(
 fig_test.update_layout(scene_camera=camera)
 
 #fig_test.update_traces(surface_count=1, selector=dict(type='isosurface'))
-fig_test.update_layout(autosize=True,width=2000,height=800, margin=dict(t=0, l=0, b=0, r=0),)
+fig_test.update_layout(autosize=False,width=2000,height=800, margin=dict(t=0, l=0, b=0, r=0),)
 fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AA', showticklabels=False),
                     yaxis = dict(title='Depth', showticklabels=False),
                     zaxis = dict(title='Level', showticklabels=False), ))

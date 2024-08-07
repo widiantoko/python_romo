@@ -18,7 +18,7 @@ for i, row in storage.iterrows():
         else:
              hasil2 = row["Aisle"]
         
-        storage.at[i, 'c3'] = hasil2
+        storage.at[i, 'Aisle'] = hasil2
 
 
 

@@ -10,10 +10,6 @@ st.set_page_config(
 
 storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
 storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
-
-
-
-
 storage['color'] = storage['Nm_Brg'].apply(lambda x: 'balance' if x == 'Dragon' else 'Plasma')
 
 
@@ -132,7 +128,7 @@ fig_test_new.update_layout(
 
 
 
-fig_test_new.update_layout(autosize=False, width=2000,height=500, margin=dict(t=0, r=0, l=0, b=0,),)
+fig_test_new.update_layout(autosize=False, width=1000,height=200, margin=dict(t=0, r=0, l=0, b=0,),)
 
 fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=0, showticklabels=False),
                     yaxis = dict(title='Depth', showticklabels=False),

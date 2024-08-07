@@ -49,7 +49,7 @@ while i < len(x_gab):
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
         hovertemplate=
-            "<b>Lokasi:</b> %{lokasi}"
+            "<b>Lokasi:</b> %{pick_color}"
             "<br><b>Produk:</b> %{hovertext}" 
             "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
 

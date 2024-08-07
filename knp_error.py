@@ -70,7 +70,7 @@ st.plotly_chart(fig_test_new)
 
 
 
-storage=pd.read_csv('uji_coba_barucsv', delimiter=';',decimal=',', dtype={'aisle':str}) 
+storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
 storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
 storage['color'] = storage['Nm_Brg'].apply(lambda x: 'balance' if x == 'Dragon' else 'Plasma')
 

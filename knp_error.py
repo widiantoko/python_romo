@@ -58,7 +58,7 @@ fig_test_new.update_layout(
         font_family="Arial"),)
 
 
-fig_test_new.update_layout(autosize=True, width=2000,height=400, margin=dict(t=20, r=0, l=0, b=20,),)
+fig_test_new.update_layout(autosize=False, width=2000,height=400, margin=dict(t=20, r=0, l=0, b=20,),)
 
 fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=45, showticklabels=False),
                     yaxis = dict(title='Depth', showticklabels=False),

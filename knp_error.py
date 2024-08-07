@@ -7,9 +7,9 @@ st.set_page_config(
     page_title="Storage_Warehouse",
     layout="centered",)
 
-#drinks = pd.read_csv(url, dtype={'beer_servings':float})
-storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
-storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
+
+storage=pd.read_csv('uji_cobacsv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
+storage['position']=storage["zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
 
 
 

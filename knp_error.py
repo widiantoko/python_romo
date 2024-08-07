@@ -130,7 +130,7 @@ fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AB',tickangle=0, la
                     yaxis = dict(title='Depth', showticklabels=False),
                     zaxis = dict(title='Level', showticklabels=False), ))
 
-
+fig_test.update_layout(scene_aspectmode='data')
 st.subheader('VISUALISASI PENYIMPANAN DI GUDANG - AAA')
 st.plotly_chart(fig_test)
 

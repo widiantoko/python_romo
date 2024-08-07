@@ -31,7 +31,9 @@ y_gab=storage[['y1','y2','y3','y4','y5','y6','y7','y8']].values.tolist()
 z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].values.tolist()
 hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg' ]].values.tolist()
-pick_color = storage['color'].tolist()    
+pick_color = storage['color'].tolist()
+lokasi = storage['Zona'].tolist()
+
 
 
 fig_test = go.Figure()
@@ -46,7 +48,10 @@ while i < len(x_gab):
         opacity=1,
         colorscale=pick_color[i],
         hovertext=hvr_txt[i],
-        hovertemplate="<b>Produk:</b> %{hovertext}" "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
+        hovertemplate=
+            "<b>Lokasi:</b> %{lokasi}"
+            "<b>Produk:</b> %{hovertext}" 
+            "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
 
 
         

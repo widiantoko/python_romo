@@ -65,7 +65,7 @@ fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=4
                     zaxis = dict(title='Level', showticklabels=False), ))
 
 
-st.plotly_chart(fig_test_new)
+#st.plotly_chart(fig_test_new)
 
 
 

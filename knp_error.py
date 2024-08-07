@@ -31,7 +31,7 @@ y_gab=storage[['y1','y2','y3','y4','y5','y6','y7','y8']].values.tolist()
 z_gab=storage[['z1','z2','z3','z4','z5','z6','z7','z8']].values.tolist()
 v_gab=storage[['No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch','No_Batch']].values.tolist()
 hvr_txt=storage[['Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg','Nm_Brg' ]].values.tolist()
-#pick_color = storage['color'].tolist()
+pick_color = storage['color'].tolist()
 lokasi = storage['Zona'].tolist()
 
 
@@ -46,7 +46,7 @@ while i < len(x_gab):
         value=v_gab[i],
         showscale=False,
         opacity=1,
-        #colorscale=pick_color[i],
+        colorscale=pick_color[i],
         text=lokasi[i],
         hovertext=hvr_txt[i],
         hovertemplate=

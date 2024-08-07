@@ -18,10 +18,10 @@ storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
 
 
 
-st.dataframe(storage)
+#st.dataframe(storage)
 
 #st.text(list(storage.columns))
-st.text(storage.dtypes)
+#st.text(storage.dtypes)
 #print(storage['Nm_Brg'].drop_duplicates())
 
 #pilih=storage[storage['Nm_Brg']=='Dragon']

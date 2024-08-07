@@ -8,12 +8,14 @@ st.set_page_config(
     layout="centered",)
 
 #drinks = pd.read_csv(url, dtype={'beer_servings':float})
-storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',') 
+storage=pd.read_csv('uji_coba.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
 storage['position']=storage["Zona"].astype(str)+storage["Aisle"].astype(str)+storage["Depth"].astype(str)+storage["Level"].astype(str)
 
 
 
 storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
+
+
 
 
 st.dataframe(storage)

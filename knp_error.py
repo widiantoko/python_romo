@@ -51,7 +51,7 @@ while i < len(x_gab):
         hovertext=hvr_txt[i],
         hovertemplate=
             "<b>Lokasi:</b> %{text}"
-            "<b>Produk:</b> %{hovertext}" 
+            "<br><b>Produk:</b> %{hovertext}" 
             "<br><b>Batch:</b> %{value:d3-format} <extra></extra>"
 
 

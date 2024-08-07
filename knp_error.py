@@ -114,7 +114,11 @@ fig_test.update_layout(
     hoverlabel=dict(
         bgcolor="white",
         font_size=12,
-        font_family="Arial"),)
+        font_family="Arial"),
+        
+    
+        
+        )
 
 
 fig_test.update_traces(surface_count=1, selector=dict(type='isosurface'))

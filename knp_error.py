@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title="Storage_Warehouse",
-    layout="centered",)
+    layout="wide",)
 
 storage_new=pd.read_csv('uji_coba_baru.csv', delimiter=';',decimal=',', dtype={'aisle':str}) 
 

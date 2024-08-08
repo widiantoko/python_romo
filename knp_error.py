@@ -14,7 +14,7 @@ st.set_page_config(
 storage=pd.read_csv('text_xwh_new.csv', delimiter=';',decimal=',') 
 
 #storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
-storage['color'] = storage['Nm_Brg'].apply(lambda x: 'fall' if x == '0052 - WANKAI' else 'tealgrn')
+storage['color'] = storage['Nm_Brg'].apply(lambda x: 'tealrose' if x == '0052 - WANKAI' else 'tealgrn')
 
 
 #for a in storage['position']:

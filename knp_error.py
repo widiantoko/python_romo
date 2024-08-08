@@ -63,12 +63,12 @@ fig_test.update_layout(
         
         )
 
-#camera = dict(
+camera = dict(
     #up=dict(x=0, y=0, z=1),
 #    center=dict(x=0, y=1, z=0),
-#    eye=dict(x=3, y=3, z=3))
+    eye=dict(x=2, y=2, z=2))
 
-#fig_test.update_layout(scene_camera=camera)
+fig_test.update_layout(scene_camera=camera)
 
 #fig_test.update_traces(surface_count=1, selector=dict(type='isosurface'))
 fig_test.update_layout(autosize=True,width=2500,height=600, margin=dict(t=0, l=0, b=0, r=0),)

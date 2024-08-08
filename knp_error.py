@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title="Storage_Warehouse",
-    layout="center",)
+    layout="centered",)
 
 
 

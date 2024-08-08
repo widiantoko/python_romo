@@ -64,7 +64,7 @@ fig_test.update_layout(
         )
 
 camera = dict(
-    up=dict(x=0, y=1, z=1),
+    up=dict(x=-2, y=1, z=1),
     center=dict(x=0, y=0, z=0),
     eye=dict(x=4, y=2.5, z=2.5))
 

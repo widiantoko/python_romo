@@ -73,7 +73,7 @@ fig_test_new.update_layout(scene = dict(xaxis = dict(title='Blok AA',tickangle=4
 
 storage=pd.read_csv('test_xwh.csv', delimiter=';',decimal=',', dtype={'Aisle':str}) 
 storage['posisi']=storage["Zona"].apply(str)+"."+storage["Aisle"].apply(str)
-storage['color'] = storage['Nm_Brg'].apply(lambda x: 'balance' if x == '0052 - WANKAI' else 'Plasma')
+storage['color'] = storage['Nm_Brg'].apply(lambda x: 'Balance' if x == '0052 - WANKAI' else 'Green')
 
 
 #for a in storage['position']:

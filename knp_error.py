@@ -104,7 +104,7 @@ result_new['x6']= result_new['bayint']-0.05
 result_new['x7']= result_new['bayint']-0.05
 result_new['x8']= result_new['bayint']-0.05
 
-result_new['y1']= result_new['seq']
+#result_new['y1']= result_new['seq']
 
 
 BW_1A = [ 0.95,  0.00,   0.95,	0.00,	0.95,	0.00,	0.95,	0.00]

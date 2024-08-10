@@ -94,7 +94,7 @@ result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 
 result_new['total_loc'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 
-#result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
+result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
 result_new["seq"] = result_new.groupby("loc_new").cumcount() + 1
 
 

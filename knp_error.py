@@ -81,8 +81,8 @@ st.subheader('VISUALISASI PENYIMPANAN BLOK AA')
 st.plotly_chart(fig_test)
 
 
-xa=6
-xb=['aman']
-xc=xa*xb
 
-st.text(xc) 
+
+new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str}) 
+
+st.dataframe(new2.head(30))

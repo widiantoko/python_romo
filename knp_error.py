@@ -100,7 +100,7 @@ result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)
 result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
 #per_loc=result_new['count'].drop_duplicates()
 
-st.dataframe(result_new.head(30))
+st.dataframe(result_new.head(50))
 
 result_new['seq'] = ""
 for i in range(0, len(result_new)):

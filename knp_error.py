@@ -125,13 +125,12 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 
 
-#df = df.assign(Percentage = lambda x: (x['Total_Marks'] /500 * 100))
 
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')
 
 
 
 st.dataframe(result_new.head(30))
-#st.text(result_new.dtypes)
+st.text(BW_1)
 
 

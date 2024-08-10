@@ -78,7 +78,7 @@ fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AA', showticklabels
 
 fig_test.update_layout(scene_aspectmode='data')
 st.subheader('VISUALISASI PENYIMPANAN BLOK AA')
-st.plotly_chart(fig_test)
+#st.plotly_chart(fig_test)
 
 
 
@@ -88,13 +88,8 @@ new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str
 
 
 result_new = new2.loc[new2.index.repeat(new2.qtybag)]
-#ids=result_new['loc_new'].drop_duplicates()
-
-#st.text(ids)
-
-result_new['total_loc'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
-
-result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
+#result_new['total_loc'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
+#result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
 result_new["seq"] = result_new.groupby("loc_new").cumcount() + 1
 
 

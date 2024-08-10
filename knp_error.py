@@ -153,7 +153,7 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 for i, row in result_new.iterrows():
         hasil1 = ''
-        if (row['posisi'] is 'BW_1'):
+        if (row['posisi'] == 'BW_1'):
             hasil1 = '1,5'
         else:
             hasil1 = '2,8'

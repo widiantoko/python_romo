@@ -95,8 +95,10 @@ kode_seq = {1:'BW_1', 2:'AT_1', 3:'BW_2', 4:'AT_2', 5:'BW_3', 6:'AT_3', 7:'BW_4'
 
 result_new['posisi']=[kode_seq[x] for x in result_new['seq']]
 
-
-
+result_new['x1']= result_new['bayint']-1
+result_new['x2']= result_new['bayint']-1
+result_new['x3']= result_new['bayint']-1
+result_new['x4']= result_new['bayint']-1
 
 st.dataframe(result_new.head(30))
 

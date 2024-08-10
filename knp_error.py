@@ -158,7 +158,7 @@ result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 els
 
 
 
-st.table(result_new.head(30))
-st.text(result_new.dtypes)
+st.dataframe(result_new.head(30))
+#st.text(result_new.dtypes)
 
 

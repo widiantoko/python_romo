@@ -98,8 +98,8 @@ st.text(ids)
 result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 #result_new.loc[result_new.loc_new.isin(ids), 'no_urut_br'] += 1
 
-
-result_new['new_col'] = np.arange(1, len(result_new['loc_new']) + 1)
+for i in ids:
+    result_new['new_col'] = np.arange(1, len(ids) + 1)
 
     
 

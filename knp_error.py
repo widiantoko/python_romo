@@ -95,36 +95,11 @@ result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 result_new['total_loc'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 
 #result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
-
 result_new["seq"] = result_new.groupby("loc_new").cumcount() + 1
 
-#per_loc=result_new['count'].drop_duplicates()
-
-st.dataframe(result_new.head(50))
-
-#result_new['seq'] = ""
-#for i in range(0, len(result_new)):
-#    result_new.loc[i, 'seq'] = 1 if result_new.loc[i, 'count'] == 0 else  result_new.loc[i - 1, 'seq'] + 1
 
 
-# Python3 Program to Create list 
-# with integers within given range 
-
-
-
-#seq_list = []
-#counter = 0
-#flag_list = list(df['flag'])
-#for flag in flag_list:
-#    if(flag == 0):
-#        counter = 1
-#        seq_list.append(counter)
-#    else:
-#        counter += 1
-#        seq_list.append(counter)
-        
-#df['seq'] = seq_list
-
+st.dataframe(result_new.head(30))
 
 
 

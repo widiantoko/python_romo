@@ -100,14 +100,6 @@ result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)
 result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
 per_loc=result_new['count'].drop_duplicates()
 
-st.text(per_loc)
-
-
-for i in per_loc:
-    array_1 = np.arange(start=0, stop=i, step=1)
-
-
-st.text(array_1)
 
 # Output:
 # array([0, 2, 4, 6, 8])

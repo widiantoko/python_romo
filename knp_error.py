@@ -102,8 +102,21 @@ per_loc=result_new['count'].drop_duplicates()
 
 result_new['seq'] = ""
 for i in range(0, len(result_new)):
-    result_new.loc[i, 'seq'] = 1 if result_new.loc[i, 'loc_new'] == 0 else  result_new.loc[i - 1, 'seq'] + 1
+    result_new.loc[i, 'seq'] = 1 if result_new.loc[i, 'no_urut'] == 0 else  result_new.loc[i - 1, 'seq'] + 1
 
+
+#seq_list = []
+#counter = 0
+#flag_list = list(df['flag'])
+#for flag in flag_list:
+#    if(flag == 0):
+#        counter = 1
+#        seq_list.append(counter)
+#    else:
+#        counter += 1
+#        seq_list.append(counter)
+        
+#df['seq'] = seq_list
 
 
 st.dataframe(result_new.head(30))

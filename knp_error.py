@@ -134,6 +134,10 @@ result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' els
 
 result_new['gab'].str.replace(r'[0-9+]','', case=True, Regex=True)
 
+result_new['gab']= str.replace(string = result_new['gab'],
+                                         pattern = "[\\*\\(\\)]",
+                                         replacement = "")
+
 # = df['AB'].str.split(' ', n=1, expand=True)
 
 

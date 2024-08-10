@@ -85,13 +85,10 @@ st.plotly_chart(fig_test)
 
 new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str}) 
 
-#st.dataframe(new2.head(30))
 
-
-import numpy as np
 
 result_new = new2.loc[new2.index.repeat(new2.qtybag)]
-ids=result_new['loc_new'].drop_duplicates()
+#ids=result_new['loc_new'].drop_duplicates()
 
 #st.text(ids)
 

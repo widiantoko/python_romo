@@ -99,10 +99,10 @@ result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)
 result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
 per_loc=result_new['count'].drop_duplicates 
 
-#result_new.loc[result_new.loc_new.isin(ids), 'no_urut_br'] += 1
+st.text(per_loc)
 
-
-result_new['new_col'] = np.arange(1, per_loc, 1)
+#for i in per_loc:
+#    xyxy = np.arange(1, per_loc, 1)
 
     
 

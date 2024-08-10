@@ -107,7 +107,8 @@ result_new['x8']= result_new['bayint']-0.05
 #result_new['y1']= result_new['seq']
 
 
-BW_1A = {'y1':0.95, 'y2':0.00, 'y3':0.95, 'y4':0.00, 'y5':0.95,	'y6':0.00,	'y7':0.95,	'y8':0.00}
+BW_1A = [{'y1':0.95}, {'y2':0.00}, {'y3':0.95}, {'y4':0.00}, {'y5':0.95},{'y6':0.00}, {'y7':0.95},{'y8':0.00}]
+
 
 def extract_values(dictionary):
     y1 = dictionary['y1']

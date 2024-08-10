@@ -93,7 +93,7 @@ import numpy as np
 result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 ids=result_new['loc_new'].drop_duplicates()
 
-st.text(ids)
+#st.text(ids)
 
 result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 

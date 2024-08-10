@@ -111,18 +111,18 @@ BW_1A = [{'y1':0.95}, {'y2':0.00}, {'y3':0.95}, {'y4':0.00}, {'y5':0.95},{'y6':0
 BW_2A = [{'y1':1.95}, {'y2':1.00}, {'y3':1.95}, {'y4':1.00}, {'y5':1.95},{'y6':1.00}, {'y7':1.95},{'y8':1.00}]
 
 
-def extract_values(dictionary):
-    y1 = dictionary['y1']
-    y2 = dictionary['y2']
-    y3 = dictionary['y3']
-    y4 = dictionary['y4']
-    y5 = dictionary['y5']
-    y6 = dictionary['y6']
-    y7 = dictionary['y7']
-    y8 = dictionary['y8']
+#def extract_values(dictionary):
+#    y1 = dictionary['y1']
+#    y2 = dictionary['y2']
+#    y3 = dictionary['y3']
+#    y4 = dictionary['y4']
+#    y5 = dictionary['y5']
+#    y6 = dictionary['y6']
+#    y7 = dictionary['y7']
+#    y8 = dictionary['y8']
 
 
-    return y1, y2, y3, y4, y5, y6, y7,y8
+#    return y1, y2, y3, y4, y5, y6, y7,y8
 
 
 #BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]

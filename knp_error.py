@@ -101,8 +101,12 @@ result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count'
 per_loc=result_new['count'].drop_duplicates()
 
 
-# Output:
-# array([0, 2, 4, 6, 8])
     
 
 st.dataframe(result_new.head(30))
+
+list_a=[3,4,5]
+for i in list_a:
+    array_list=np.arange(1,i,1)
+
+print(array_list)

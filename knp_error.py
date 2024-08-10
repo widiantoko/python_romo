@@ -95,9 +95,11 @@ ids=result_new['loc_new'].drop_duplicates()
 
 #st.text(ids)
 
-result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
+result_new['total_loc'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 
-result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
+#result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
+
+result_new["seq"] = result_new.groupby("loc_new").cumcount() + 1
 
 #per_loc=result_new['count'].drop_duplicates()
 

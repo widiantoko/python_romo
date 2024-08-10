@@ -110,12 +110,6 @@ st.text(array_1)
 
 # Output:
 # array([0, 2, 4, 6, 8])
-
-
-xyxy = np.arange(1, i, 1)
-
-st.texx(xyxy)
-
     
 
 st.dataframe(result_new.head(30))

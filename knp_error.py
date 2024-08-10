@@ -126,7 +126,7 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 #result_new['y1'],['y2'],['y3'],['y4'],['y5'],['y6'],['y7'],['y8'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
-result_new[['gab']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
+result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 
 #df[['First Name', 'Last Name']] = df['Name'].str.split(' ', expand=True)
 

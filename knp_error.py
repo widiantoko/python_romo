@@ -107,7 +107,17 @@ result_new['x8']= result_new['bayint']-0.05
 
 #df = df.assign(Percentage = lambda x: (x['Total_Marks'] /500 * 100))
 
-result_new['test'] = result_new['seq'].apply(lambda x: 1 if x == 'ganjil' else 'genap')
+#result_new['test'] = result_new['seq'].apply(lambda x: 1 if x == 'ganjil' else 'genap')
+
+# Use if-else in Lambda Functions
+
+# check if number is even or odd
+result = lambda x : f"{x} is even" if x %2==0 else f"{x} is odd"
+
+# print for numbers
+st.text(result(20))
+st.text(result(11))
+
 
 
 st.dataframe(result_new.head(30))

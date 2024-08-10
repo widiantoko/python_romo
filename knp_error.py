@@ -127,12 +127,14 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 #result_new['y1'],['y2'],['y3'],['y4'],['y5'],['y6'],['y7'],['y8'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else BW_2)
-result_new['gab']=result_new['gab'].replace("[","")
-result_new['gab']=result_new['gab'].replace("]","")
 
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 
+
+result_new['gab'].str.replace(r'[0-9+]','', case=True, Regex=True)
+
+# = df['AB'].str.split(' ', n=1, expand=True)
 
 
 #df[['A', 'B']] = df['AB'].str.split(' ', n=1, expand=True)

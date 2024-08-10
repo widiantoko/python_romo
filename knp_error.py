@@ -86,3 +86,6 @@ st.plotly_chart(fig_test)
 new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str}) 
 
 st.dataframe(new2.head(30))
+
+batch_no=new2['qtybag']*new2['batchvendor']
+st.text(batch_no)

@@ -105,10 +105,10 @@ result_new['x7']= result_new['bayint']-0.05
 result_new['x8']= result_new['bayint']-0.05
 
 
-for num in result_new['seq']:
-    if num % 2 == 0:
+
+if result_new['seq'] % 2 == 0:
         result_new['test']='genap'
-    else:
+else:
         result_new['test']='ganjil'
 
 

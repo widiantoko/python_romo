@@ -101,8 +101,8 @@ per_loc=result_new['count'].drop_duplicates
 
 #result_new.loc[result_new.loc_new.isin(ids), 'no_urut_br'] += 1
 
-for i in per_loc:
-    result_new['new_col'] = np.arange(1, i, 1)
+
+result_new['new_col'] = np.arange(1, per_loc, 1)
 
     
 

@@ -105,7 +105,7 @@ result_new['x7']= result_new['bayint']-0.05
 result_new['x8']= result_new['bayint']-0.05
 
 
-result_new['test'] = result_new['seq'].apply(lambda x: x > 5  if x == 'lbh dr 5' else 'krg dr 5')
+result_new['test'] = result_new['seq'].assign(lambda x: x > 5  if x == 'lbh dr 5' else 'krg dr 5')
 
 
 st.dataframe(result_new.head(30))

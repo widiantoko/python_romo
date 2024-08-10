@@ -88,7 +88,7 @@ new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str
 #st.dataframe(new2.head(30))
 
 
-
+import numpy as np
 
 result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 ids=result_new['loc_new'].drop_duplicates()
@@ -98,6 +98,9 @@ st.text(ids)
 result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 #result_new.loc[result_new.loc_new.isin(ids), 'no_urut_br'] += 1
 
+for id in ids:
+    result_new['new_col'] = np.arange(1, len(result_new['loc_new']) + 1)
 
+    
 
 st.dataframe(result_new.head(30))

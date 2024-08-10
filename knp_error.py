@@ -107,7 +107,7 @@ result_new['x8']= result_new['bayint']-0.05
 
 #df = df.assign(Percentage = lambda x: (x['Total_Marks'] /500 * 100))
 
-#result_new['test'] = result_new['seq'].apply(lambda x: 1 if x == 'ganjil' else 'genap')
+result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')
 
 # Use if-else in Lambda Functions
 
@@ -121,6 +121,6 @@ st.text(result(11))
 
 
 st.dataframe(result_new.head(30))
-st.text(result_new.dtypes)
+#st.text(result_new.dtypes)
 
 

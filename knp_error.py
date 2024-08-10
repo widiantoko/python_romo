@@ -153,9 +153,6 @@ result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['gab'].apply(
 
 
 
-#df[['A', 'B']] = df['AB'].str.split(' ', n=1, expand=True)
-#df[['First Name', 'Last Name']] = df['Name'].str.split(' ', expand=True)
-
 
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')
 

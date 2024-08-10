@@ -104,10 +104,16 @@ result_new['x6']= result_new['bayint']-0.05
 result_new['x7']= result_new['bayint']-0.05
 result_new['x8']= result_new['bayint']-0.05
 
-if result_new['seq'] % 2 == 0:
-    'genap'
-else:
-    'ganjil'
+
+for num in result_new['seq']:
+
+    # checking condition
+    if num % 2 == 0:
+        result_new['test']='genap'
+    else:
+        result_new['test']='ganjil'
+
+
 
 
 st.dataframe(result_new.head(30))

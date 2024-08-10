@@ -154,9 +154,9 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 for i, row in result_new.iterrows():
         hasil1 = ''
         if (row['posisi'] =='BW_1'):
-            hasil1 = [1,5]
+            hasil1 = 1,5
         else:
-            hasil1 = [2,8]
+            hasil1 = 2,8
     
         result_new.at[i, 'y1'] = hasil1
 

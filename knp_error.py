@@ -85,4 +85,4 @@ xa=6
 xb='aman'
 xc=xa*xb
 
-st.text(xc) 
+st.text({xc}) 

@@ -107,7 +107,7 @@ result_new['x8']= result_new['bayint']-0.05
 
 #df = df.assign(Percentage = lambda x: (x['Total_Marks'] /500 * 100))
 
-result_new = result_new.assign(test =lambda x: x > 5  if x == 'lbh dr 5' else 'krg dr 5')
+result_new['test'] = result_new['seq'].apply(lambda x: 1 if x == 'ganjil' else 'genap')
 
 
 st.dataframe(result_new.head(30))

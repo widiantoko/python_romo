@@ -107,7 +107,8 @@ result_new['x8']= result_new['bayint']-0.05
 #result_new['y1']= result_new['seq']
 
 
-BW_1A = {'y1':0.95, 'y2':0.00, 'y3':0.95,	'y4':0.00,	'y5':0.95,	'y6':0.00,	'y7':0.95,	'y8':0.00}
+#BW_1A = ['y1':0.95, 'y2':0.00, 'y3':0.95,	'y4':0.00,	'y5':0.95,	'y6':0.00,	'y7':0.95,	'y8':0.00]
+BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
 AT_1 = {0.95,	0.00,	0.95,	0.00,	0.95,	0.00,	0.95,	0.00}
 BW_2 = {1.95,	1.00,	1.95,	1.00,	1.95,	1.00,	1.95,	1.00}
 AT_3 = {1.95,	1.00,	1.95,	1.00,	1.95,	1.00,	1.95,	1.00}
@@ -125,7 +126,7 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 #result_new[['y1'],['y2'],['y3'],['y4'],['y5'],['y6'],['y7'],['y8']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 
-result_new['y1','y2','y3','y4','y5','y6','y7','y8'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
+result_new(columns=['y1','y2','y3','y4','y5','y6','y7','y8']) = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 
 
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')

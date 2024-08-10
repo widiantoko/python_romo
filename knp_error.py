@@ -89,6 +89,8 @@ new2=pd.read_csv('new2.csv', delimiter=';',decimal=',', dtype={'batchvendor':str
 
 
 result_new = new2.loc[new2.index.repeat(new2.qtybag)]
+result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
+
 
 
 st.dataframe(result_new.head(30))

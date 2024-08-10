@@ -143,7 +143,6 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 #result_new['y1'],['y2'],['y3'],['y4'],['y5'],['y6'],['y7'],['y8'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
-#result_new['gab'] = result_new['posisi'].apply(lambda x:  AT_1 if x=='BW_1' else BW_2)
 
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
@@ -161,7 +160,7 @@ for i, row in result_new.iterrows():
         result_new.at[i, 'y1'] = hasil1
 
 
-
+result_new['gab'] = result_new['posisi'].apply(lambda x:  '1,5,0,8' if x=='BW_1' else '3,8,8,4')
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')
 
 

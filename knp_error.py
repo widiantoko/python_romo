@@ -105,16 +105,16 @@ result_new['x7']= result_new['bayint']-0.05
 result_new['x8']= result_new['bayint']-0.05
 
 
-for num in result_new['qty_bag']:
-    if (num % 2) == 0:
-        result_new['test']='genap'
-    else:
-        result_new['test']='ganjil'
-        #print(num, end=" ")
+#for num in result_new['qty_bag']:
+#    if (num % 2) == 0:
+#        result_new['test']='genap'
+#    else:
+#        result_new['test']='ganjil'
+#        #print(num, end=" ")
 
 
 
 st.dataframe(result_new.head(30))
-
+st.text(result_new.dtypes)
 
 

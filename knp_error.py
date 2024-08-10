@@ -107,8 +107,23 @@ result_new['x8']= result_new['bayint']-0.05
 #result_new['y1']= result_new['seq']
 
 
-#BW_1A = ['y1':0.95, 'y2':0.00, 'y3':0.95,	'y4':0.00,	'y5':0.95,	'y6':0.00,	'y7':0.95,	'y8':0.00]
-BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
+BW_1A = {'y1':0.95, 'y2':0.00, 'y3':0.95, 'y4':0.00, 'y5':0.95,	'y6':0.00,	'y7':0.95,	'y8':0.00}
+
+def extract_values(dictionary):
+    y1 = dictionary['y1']
+    y2 = dictionary['y2']
+    y3 = dictionary['y3']
+    y4 = dictionary['y4']
+    y5 = dictionary['y5']
+    y6 = dictionary['y6']
+    y7 = dictionary['y7']
+    y8 = dictionary['y8']
+
+
+    return y1, y2, y3, y4, y5, y6, y7,y8
+
+
+#BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
 AT_1 = [0.95,	0.00,	0.95,	0.00,	0.95,	0.00,	0.95,	0.00]
 BW_2 = [1.95,1.00,1.95,1.00,1.95,1.00,1.95,1.00]
 AT_3 = {1.95,	1.00,	1.95,	1.00,	1.95,	1.00,	1.95,	1.00}
@@ -131,10 +146,9 @@ result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' els
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 
-import re
-result_new['gab_1'] = re.sub(r"[\([{})\]]", "", result_new['gab'])
+result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['gab'].apply(lambda x: pd.Series(extract_values(x)))
 
-# = df['AB'].str.split(' ', n=1, expand=True)
+
 
 
 #df[['A', 'B']] = df['AB'].str.split(' ', n=1, expand=True)

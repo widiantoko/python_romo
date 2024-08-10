@@ -94,7 +94,7 @@ result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 ids=result_new['loc_new'].drop_duplicates()
 
 result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
-result_new.loc[result_new.a.isin(ids), 'no_urut_br'] += 1
+result_new.loc[result_new.loc_new.isin(ids), 'no_urut_br'] += 1
 
 
 

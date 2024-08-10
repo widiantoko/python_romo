@@ -99,6 +99,10 @@ result_new['x1']= result_new['bayint']-1
 result_new['x2']= result_new['bayint']-1
 result_new['x3']= result_new['bayint']-1
 result_new['x4']= result_new['bayint']-1
+result_new['x5']= result_new['bayint']-0.05
+result_new['x6']= result_new['bayint']-0.05
+result_new['x7']= result_new['bayint']-0.05
+result_new['x8']= result_new['bayint']-0.05
 
 st.dataframe(result_new.head(30))
 

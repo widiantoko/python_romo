@@ -106,6 +106,6 @@ per_loc=result_new['count'].drop_duplicates()
 st.dataframe(result_new.head(30))
 
 list_a=[3,4,5]
-for i in list_a:
+for i in len(list_a):
     array_list=np.arange(1,i,1)
 st.text(array_list)

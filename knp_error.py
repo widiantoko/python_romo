@@ -104,6 +104,8 @@ st.text(per_loc)
 for i in per_loc:
     xyxy = np.arange(1, i, 1)
 
+st.texx(xyxy)
+
     
 
 st.dataframe(result_new.head(30))

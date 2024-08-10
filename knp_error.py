@@ -131,12 +131,8 @@ result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' els
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 
-
-#result_new['gab'].str.replace(r'[0-9+]','', case=True, Regex=True)
-
-result_new['gab']= str.replace(string = result_new['gab'],
-                                         pattern = "[\\*\\(\\)]",
-                                         replacement = "")
+import re
+result_new['gab_1'] = re.sub(r"[\([{})\]]", "", result_new['gab'])
 
 # = df['AB'].str.split(' ', n=1, expand=True)
 

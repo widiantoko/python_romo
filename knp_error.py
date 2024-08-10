@@ -158,7 +158,7 @@ for i, row in result_new.iterrows():
         else:
             hasil1 = [2,8]
     
-        result_new.at[i, 'y1', 'y2'] = hasil1
+        result_new.at[i, 'y1'] = hasil1
 
 
 

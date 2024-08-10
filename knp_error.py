@@ -93,6 +93,16 @@ result_new = new2.loc[new2.index.repeat(new2.qtybag)]
 result_new["seq"] = result_new.groupby("loc_new").cumcount() + 1
 
 
+kode_seq = {1:'BW_1', 2:'AT_1', 3:'BW_2', 4:'AT_2', 5:'BW_3', 6:'AT_3', 7:'BW_4', 8:'AT4',
+         9:'BW_1', 10:'AT_1', 11:'BW_2', 12:'AT_2', 13:'BW_3', 14:'AT_3', 15:'BW_4', 16:'AT4'
+          
+          
+}
+
+result_new['posisi']=[kode_seq[x] for x in result_new['seq']]
+
+
+
 
 st.dataframe(result_new.head(30))
 

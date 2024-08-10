@@ -81,8 +81,8 @@ st.subheader('VISUALISASI PENYIMPANAN BLOK AA')
 st.plotly_chart(fig_test)
 
 
-xa=6
-xb='aman'
+xa=[6]
+xb=['aman']
 xc=xa*xb
 
-st.text({xc}) 
+st.text(xc) 

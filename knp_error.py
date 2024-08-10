@@ -101,8 +101,18 @@ per_loc=result_new['count'].drop_duplicates()
 
 st.text(per_loc)
 
+
 for i in per_loc:
-    xyxy = np.arange(1, i, 1)
+    array_1 = np.arange(start=0, stop=i, step=1)
+
+
+st.text(array_1)
+
+# Output:
+# array([0, 2, 4, 6, 8])
+
+
+xyxy = np.arange(1, i, 1)
 
 st.texx(xyxy)
 

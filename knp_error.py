@@ -108,5 +108,4 @@ st.dataframe(result_new.head(30))
 list_a=[3,4,5]
 for i in list_a:
     array_list=np.arange(1,i,1)
-
-print(array_list)
+st.text(array_list)

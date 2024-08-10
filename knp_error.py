@@ -110,14 +110,6 @@ st.dataframe(result_new.head(50))
 # Python3 Program to Create list 
 # with integers within given range 
 
-def createList(r1, r2):
-	return [item for item in range(r1, r2+1)]
-	
-# Driver Code
-r1 = 1
-r2 = i in ids
-st.text(createList(r1, r2))
-
 
 
 #seq_list = []

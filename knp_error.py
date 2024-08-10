@@ -108,6 +108,7 @@ result_new['x8']= result_new['bayint']-0.05
 
 
 BW_1A = [{'y1':0.95}, {'y2':0.00}, {'y3':0.95}, {'y4':0.00}, {'y5':0.95},{'y6':0.00}, {'y7':0.95},{'y8':0.00}]
+BW_2A = [{'y1':1.95}, {'y2':1.00}, {'y3':1.95}, {'y4':1.00}, {'y5':1.95},{'y6':1.00}, {'y7':1.95},{'y8':1.00}]
 
 
 def extract_values(dictionary):
@@ -142,7 +143,7 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 
 #result_new['y1'],['y2'],['y3'],['y4'],['y5'],['y6'],['y7'],['y8'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else None)
-result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else BW_2)
+result_new['gab'] = result_new['posisi'].apply(lambda x:  BW_1A if x=='BW_1' else BW_2A)
 
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)

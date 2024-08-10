@@ -115,7 +115,7 @@ def createList(r1, r2):
 	
 # Driver Code
 r1 = 1
-r2 = ids
+r2 = i in ids
 st.text(createList(r1, r2))
 
 

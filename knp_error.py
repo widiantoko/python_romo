@@ -98,13 +98,26 @@ ids=result_new['loc_new'].drop_duplicates()
 result_new['no_urut'] = (result_new['loc_new'] != result_new['loc_new'].shift(1)).cumsum()
 
 result_new['count'] = result_new.groupby('loc_new')['loc_new'].transform('count')
-#per_loc=result_new['count'].drop_duplicates()
+per_loc=result_new['count'].drop_duplicates()
 
 st.dataframe(result_new.head(50))
 
-result_new['seq'] = ""
-for i in range(0, len(result_new)):
-    result_new.loc[i, 'seq'] = 1 if result_new.loc[i, 'count'] == 0 else  result_new.loc[i - 1, 'seq'] + 1
+#result_new['seq'] = ""
+#for i in range(0, len(result_new)):
+#    result_new.loc[i, 'seq'] = 1 if result_new.loc[i, 'count'] == 0 else  result_new.loc[i - 1, 'seq'] + 1
+
+
+# Python3 Program to Create list 
+# with integers within given range 
+
+def createList(r1, r2):
+	return [item for item in range(r1, r2+1)]
+	
+# Driver Code
+r1 = 1
+r2 = ids
+st.text(createList(r1, r2))
+
 
 
 #seq_list = []

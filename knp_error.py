@@ -150,8 +150,8 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['gab'].apply(lambda x: pd.Series(extract_values(x)))
 
 
-result_new['gab'] = result_new['posisi'].apply(lambda x:  '0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00' if x=='BW_1' or X=='AT_1' else 
-                                               '1.95,1.00,1.95,1.00,1.95,1.00,1.95,1.00' if x =='BW_2' or x =='AT_2' else 
+result_new['gab'] = result_new['posisi'].apply(lambda x:  '0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00' if x=='BW_1' or 'AT_1' else 
+                                               '1.95,1.00,1.95,1.00,1.95,1.00,1.95,1.00' if x =='BW_2' or 'AT_2' else 
                                                 '2.95,2.00,2.95,2.00,2.95,2.00,2.95,2.00' )
 
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')

@@ -125,8 +125,8 @@ result_new['x8']= result_new['bayint']-0.05
 #    return y1, y2, y3, y4, y5, y6, y7,y8
 
 
-#BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
-AT_1 = [0.95,	0.00,	0.95,	0.00,	0.95,	0.00,	0.95,	0.00]
+BW_1A = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
+AT_1 = [0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00]
 BW_2 = [1.95,1.00,1.95,1.00,1.95,1.00,1.95,1.00]
 AT_3 = {1.95,	1.00,	1.95,	1.00,	1.95,	1.00,	1.95,	1.00}
 BW_4 = {2.95,	2.00,	2.95,	2.00,	2.95,	2.00,	2.95,	2.00}
@@ -150,10 +150,13 @@ AT_8 = {6.95,	6.00,	6.95,	6.00,	6.95,	6.00,	6.95,	6.00}
 #result_new[['y1','y2','y3','y4','y5','y6','y7','y8']] = result_new['gab'].apply(lambda x: pd.Series(extract_values(x)))
 
 
-result_new['gab'] = result_new['posisi'].apply(lambda x:  '1.3,5.4,0.9,8.0' if x=='BW_1' else '3.1,8.3,8.5,4.4')
+result_new['gab'] = result_new['posisi'].apply(lambda x:  '0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00' if x=='BW_1' else 
+                                               '0.95,0.00,0.95,0.00,0.95,0.00,0.95,0.00' if x =='AT_1' else 
+                                               '1.95,1.00,1.95,1.00,1.95,1.00,1.95,1.00' )
+
 result_new['test'] = result_new['seq'].apply(lambda x: 'genap' if x %2 ==  0 else 'ganjil')
 
-result_new[['y1','y2','y3','y4']]= result_new['gab'].str.split(',', expand=True)
+result_new[['y1','y2','y3','y4','y5','y6','y7','y8']]= result_new['gab'].str.split(',', expand=True)
 
 
 st.dataframe(result_new.head(30))

@@ -78,7 +78,7 @@ fig_test.update_layout(scene = dict(xaxis = dict(title='Blok AA', showticklabels
 
 fig_test.update_layout(scene_aspectmode='data')
 st.subheader('VISUALISASI PENYIMPANAN BLOK AA')
-#st.plotly_chart(fig_test)
+st.plotly_chart(fig_test)
 
 
 
